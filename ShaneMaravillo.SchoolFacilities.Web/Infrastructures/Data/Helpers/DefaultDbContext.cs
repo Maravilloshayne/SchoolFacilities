@@ -16,7 +16,11 @@ namespace ShaneMaravillo.SchoolFacilities.Web.Infrastructures.Data.Helpers
         }
         #region Models
         public DbSet<Post> Posts { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
         #endregion
+
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

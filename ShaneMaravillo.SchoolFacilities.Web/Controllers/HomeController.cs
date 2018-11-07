@@ -14,18 +14,24 @@ namespace ShaneMaravillo.SchoolFacilities.Web.Controllers
     
     public class HomeController : Controller
     {
-        private readonly DefaultDbContext _context;     
+            private readonly DefaultDbContext _context;     
 
-        public HomeController(DefaultDbContext context)
-        {
-            _context = context;
+            public HomeController(DefaultDbContext context)
+            {
+                _context = context;
 
-        }
+            }
+
+        [HttpGet, Route("")]
+        [HttpGet, Route("home")]
+        [HttpGet, Route("home/index")]
+
         public IActionResult Index()
         {
             return View();
         }
 
+        [HttpGet, Route("home/initialize")]
         public IActionResult Init()
         {
             var post = this._context.Posts.FirstOrDefault();
@@ -86,9 +92,44 @@ namespace ShaneMaravillo.SchoolFacilities.Web.Controllers
                 this._context.SaveChanges();
             }
 
-            return RedirectPermanent("~/posts/index");
+
+            var user = this._context.Users.FirstOrDefault();
+            if (user == null)
+            {
+                var admin = new User()
+                {
+                    Id = Guid.Parse("b2e5a4fc-ca4e-4d3f-b9ac-d8a088cd6401"),
+                    EmailAddress = "Wendhelgregorio@gmail.com",
+                    FirstName = "Wendhel",
+                    LastName = "Gregorio",
+                    Gender = Infrastructures.Data.Enums.Gender.Male,
+                    LoginStatus = Infrastructures.Data.Enums.LoginStatus.Active,
+                    LoginTrials = 0,
+                    RegistrationCode = RandomString(6),
+                    Password = BCrypt.BCryptHelper.HashPassword("Accord605", BCrypt.BCryptHelper.GenerateSalt(8))
+                };
+                this._context.Users.Add(admin);
+                this._context.SaveChanges();
+                this._context.UserRoles.Add(new UserRole()
+                {
+                    Id = Guid.Parse("b2e5a4fc-ca4e-4d3f-b9ac-d8a088cd6401"),
+                    Role = Infrastructures.Data.Enums.Role.Admin,
+                    UserId = admin.Id
+                });
+                this._context.SaveChanges();
+            }
+            return RedirectToAction("index");
+            //return RedirectPermanent("~/posts/index");
         }
-    
+        private Random random = new Random();
+        private string RandomString(int length)
+        {
+            const string chars = "abcdefghijklmnopqrstuvwxyz0123456789";
+            return new string(Enumerable.Repeat(chars, length)
+              .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

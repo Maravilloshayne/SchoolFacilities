@@ -9,7 +9,7 @@ using ShaneMaravillo.SchoolFacilities.Web.Infrastructures.Data.Helpers;
 namespace ShaneMaravillo.SchoolFacilities.Web.Migrations
 {
     [DbContext(typeof(DefaultDbContext))]
-    [Migration("20180921110554_init")]
+    [Migration("20181004103508_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -41,6 +41,50 @@ namespace ShaneMaravillo.SchoolFacilities.Web.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Posts");
+                });
+
+            modelBuilder.Entity("ShaneMaravillo.SchoolFacilities.Web.Infrastructures.Data.Models.User", b =>
+                {
+                    b.Property<Guid?>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("EmailAddress");
+
+                    b.Property<string>("FirstName");
+
+                    b.Property<int>("Gender");
+
+                    b.Property<string>("LastName");
+
+                    b.Property<int>("LoginStatus");
+
+                    b.Property<int>("LoginTrials");
+
+                    b.Property<string>("Password");
+
+                    b.Property<string>("RegistrationCode");
+
+                    b.Property<DateTime>("Timestamp");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("ShaneMaravillo.SchoolFacilities.Web.Infrastructures.Data.Models.UserRole", b =>
+                {
+                    b.Property<Guid?>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("Role");
+
+                    b.Property<DateTime>("Timestamp");
+
+                    b.Property<Guid?>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UserRoles");
                 });
 #pragma warning restore 612, 618
         }

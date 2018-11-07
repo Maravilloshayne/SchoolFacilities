@@ -40,6 +40,50 @@ namespace ShaneMaravillo.SchoolFacilities.Web.Migrations
 
                     b.ToTable("Posts");
                 });
+
+            modelBuilder.Entity("ShaneMaravillo.SchoolFacilities.Web.Infrastructures.Data.Models.User", b =>
+                {
+                    b.Property<Guid?>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("EmailAddress");
+
+                    b.Property<string>("FirstName");
+
+                    b.Property<int>("Gender");
+
+                    b.Property<string>("LastName");
+
+                    b.Property<int>("LoginStatus");
+
+                    b.Property<int>("LoginTrials");
+
+                    b.Property<string>("Password");
+
+                    b.Property<string>("RegistrationCode");
+
+                    b.Property<DateTime>("Timestamp");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("ShaneMaravillo.SchoolFacilities.Web.Infrastructures.Data.Models.UserRole", b =>
+                {
+                    b.Property<Guid?>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("Role");
+
+                    b.Property<DateTime>("Timestamp");
+
+                    b.Property<Guid?>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UserRoles");
+                });
 #pragma warning restore 612, 618
         }
     }

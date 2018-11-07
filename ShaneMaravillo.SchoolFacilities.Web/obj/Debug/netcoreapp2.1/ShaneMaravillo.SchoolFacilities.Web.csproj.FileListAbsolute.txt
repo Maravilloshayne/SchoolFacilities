@@ -35,4 +35,14 @@ C:\Users\Shayne Maravillo\Desktop\ShaneMaravillo.SchoolFacilities\ShaneMaravillo
 C:\Users\Shayne Maravillo\Desktop\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities.Web\obj\Debug\netcoreapp2.1\Razor\Areas\Manage\Views\Posts\Create.g.cshtml.cs
 C:\Users\Shayne Maravillo\Desktop\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities.Web\obj\Debug\netcoreapp2.1\Razor\Areas\Manage\Views\Posts\Index.g.cshtml.cs
 C:\Users\Shayne Maravillo\Desktop\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities.Web\obj\Debug\netcoreapp2.1\Razor\Areas\Manage\Views\Posts\UpdateTitle.g.cshtml.cs
+C:\Users\Shayne Maravillo\Desktop\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.g.cshtml.cs
 C:\Users\Shayne Maravillo\Desktop\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities.Web\obj\Debug\netcoreapp2.1\Razor\Areas\Manage\Views\Posts\UpdateContent.g.cshtml.cs
+C:\Users\Shayne Maravillo\Desktop\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities.Web\obj\Debug\netcoreapp2.1\Razor\Areas\Manage\Views\Posts\Thumbnail.g.cshtml.cs
+C:\Users\Shayne Maravillo\Desktop\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities.Web\obj\Debug\netcoreapp2.1\Razor\Areas\Manage\Views\Posts\Banner.g.cshtml.cs
+C:\Users\Shayne Maravillo\Desktop\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\Verify.g.cshtml.cs
+C:\Users\Shayne Maravillo\Desktop\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs
+C:\Users\Shayne Maravillo\Desktop\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\ForgotPassword.g.cshtml.cs
+C:\Users\Shayne Maravillo\Desktop\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\ChangePassword.g.cshtml.cs
+C:\Users\Shayne Maravillo\Desktop\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\UpdateProfile.g.cshtml.cs
+C:\Users\Shayne Maravillo\Desktop\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\UpdateProfileImage.g.cshtml.cs
+C:\Users\Shayne Maravillo\Desktop\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities\ShaneMaravillo.SchoolFacilities.Web\obj\Debug\netcoreapp2.1\Razor\Views\Posts\Posts.g.cshtml.cs
